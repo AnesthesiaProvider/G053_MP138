@@ -3,6 +3,7 @@
 **SCSE3040 MLOps Mini Project**  
 **Group ID:** G053  
 **Problem ID:** MP138  
+**Repository:** [https://github.com/AnesthesiaProvider/G053_MP138](https://github.com/AnesthesiaProvider/G053_MP138)  
 **Faculty:** Avantika Saklani  
 **Batch:** 74  
 
@@ -10,12 +11,12 @@
 
 ## Group Members
 
-| Enrolment No. | Name | Role |
-| :--- | :--- | :--- |
-| **S24CSEU2785** | Ansh Sharma | Model & MLflow Lead |
-| **S24CSEU2799** | Amit Bhardwaj | Data & DVC Lead |
-| **S24CSEU2769** | Rakesh Kumar | Service & Docker Lead |
-| **S24CSEU2792** | Aditya Srivastava | Ops, K8s & Monitoring Lead |
+| Enrolment No. | Name | GitHub | Role |
+| :--- | :--- | :--- | :--- |
+| **S24CSEU2785** | Ansh Sharma | [@AnesthesiaProvider](https://github.com/AnesthesiaProvider) | Model & MLflow Lead |
+| **S24CSEU2799** | Amit Bhardwaj | | Data & DVC Lead |
+| **S24CSEU2769** | Rakesh Kumar | | Service & Docker Lead |
+| **S24CSEU2792** | Aditya Srivastava | | Ops, K8s & Monitoring Lead |
 
 ---
 
@@ -81,7 +82,7 @@ The complete production pipeline covers:
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/AnesthesiaProvider/G053_MP138.git
    cd G053_MP138
    ```
 
