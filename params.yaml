@@ -1,0 +1,42 @@
+data:
+  train_path: "data/train.csv"
+  raw_train_path: "data/raw/train.csv"
+  later_path: "data/later.csv"
+  raw_later_path: "data/raw/later.csv"
+  holdout_path: "data/holdout_features.csv"
+  raw_holdout_path: "data/raw/holdout_features.csv"
+  target_column: "withdrawal_thousand_rs"
+  id_column: "record_id"
+  date_column: "date"
+  features:
+    - "nearby_shops"
+    - "days_to_salary"
+    - "footfall_index"
+    - "distance_to_market_km"
+    - "avg_ticket_rs"
+    - "other_atms_1km"
+    - "atm_type"
+    - "area"
+  numeric_features:
+    - "nearby_shops"
+    - "days_to_salary"
+    - "footfall_index"
+    - "distance_to_market_km"
+    - "avg_ticket_rs"
+    - "other_atms_1km"
+  categorical_features:
+    - "atm_type"
+    - "area"
+
+model:
+  registered_model_name: "mp138_atm_cash_demand"
+  experiment_name: "mp138_cash_demand_experiment"
+  tracking_uri: "sqlite:///mlflow.db"
+  model_save_path: "models/model.joblib"
+  random_state: 42
+  ridge_alpha: 1.0
+  promotion_threshold: 0.10
+
+monitoring:
+  n_bins: 10
+  split_ratio: 0.70

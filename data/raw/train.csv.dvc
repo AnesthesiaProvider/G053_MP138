@@ -1,0 +1,5 @@
+schema: '2.0'
+outs:
+- md5: 27397bcb1ee21f8bf1980026779c76db
+  size: 70215
+  path: train.csv
