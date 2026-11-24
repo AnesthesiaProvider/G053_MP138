@@ -1,0 +1,53 @@
+group_id: G053
+problem_id: MP138
+data_issues:
+  leaking_column:
+    present: false
+    column: null
+  unit_mixup:
+    present: true
+    column: avg_ticket_rs
+    group_value: Highway
+    factor: 0.001
+  sentinel_value:
+    present: true
+    column: other_atms_1km
+    value: -999
+    count: 51
+  duplicate_rows:
+    present: true
+    count: 49
+  stuck_sensor:
+    present: false
+    column: null
+    start_date: null
+    end_date: null
+  target_typos:
+    present: true
+    count: 15
+  spelling_variants:
+    present: false
+    column: null
+    true_levels: null
+tracking:
+  experiment_name: mp138_cash_demand_experiment
+  best_run_id: 38cf20f8f3264a9781ad19ab5bdeb4f5
+  registered_model_name: mp138_atm_cash_demand
+  champion_version: 2
+monitoring:
+  psi:
+    nearby_shops: 3.7835
+    days_to_salary: 0.0159
+    footfall_index: 0.0553
+    distance_to_market_km: 0.0068
+    avg_ticket_rs: 0.0263
+    other_atms_1km: 0.0703
+  most_drifted_feature: nearby_shops
+  mae_by_group:
+    Market: 61.3316
+    Residential: 45.9611
+    Highway: 291.2767
+  worst_served_group: Highway
+  mae_v1_on_check: 132.865
+  mae_v2_on_check: 95.5116
+  decision: promote
